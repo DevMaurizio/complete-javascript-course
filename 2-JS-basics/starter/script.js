@@ -1,44 +1,18 @@
-// var firstName = 'John';
-// console.log(firstName);
+var averageScoreTeamJohn = (89 + 1 + 1) / 3;
+var averageScoreTeamMike = (116, 94, 123) / 3;
+var averageScoreTeamMary = (97, 134, 200) / 3;
 
-// var lastName = 'Smith';
-// var age = 28;
-
-// var fullAge = true;
-// console.log(fullAge);
-
-// var job;
-// console.log(job);
-
-// job = 'Teacher';
-// console.log(job);
-
-// var firstName = 'John';
-// var age = 28;
-
-// console.log(firstName + ' ' + age);
-
-// var job, isMarried;
-// job = 'teacher';
-// isMarried = false;
-
-// console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
-
-var heightInMeterMark = 1.8;
-var heightInMeterJohn = 2;
-
-var massInKilogramsMark = 81;
-var massInKilogramsJohn = 74;
-
-var bmiMark = massInKilogramsMark / (heightInMeterMark * heightInMeterMark);
-var bmiJohn = massInKilogramsJohn / (heightInMeterJohn * heightInMeterJohn);
-
-var markHasHighestBmi = false;
-
-if(bmiMark > bmiJohn){
-    markHasHighestBmi = true;
-} else {
-    markHasHighestBmi = false;
+switch(true) {
+    case averageScoreTeamMike > averageScoreTeamJohn && averageScoreTeamMike > averageScoreTeamMary:
+        console.log('Team Mike is the winner with an average score of: ' + averageScoreTeamMike);
+        break;
+    case averageScoreTeamJohn > averageScoreTeamMike && averageScoreTeamJohn > averageScoreTeamMary:
+        console.log('Team John is the winner with an average score of: ' + averageScoreTeamJohn);
+        break;
+    case averageScoreTeamMary > averageScoreTeamMike && averageScoreTeamMary > averageScoreTeamJohn:
+        console.log('Team Mary is the winner with an average score of: ' + averageScoreTeamMary);
+        break;
+    default:
+        console.log('there is a draw');
+        break;
 }
-
-console.log('Is marks BMI higher then Johns? ' + markHasHighestBmi);
