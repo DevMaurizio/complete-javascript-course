@@ -13,13 +13,32 @@
 // job = 'Teacher';
 // console.log(job);
 
-var firstName = 'John';
-var age = 28;
+// var firstName = 'John';
+// var age = 28;
 
-console.log(firstName + ' ' + age);
+// console.log(firstName + ' ' + age);
 
-var job, isMarried;
-job = 'teacher';
-isMarried = false;
+// var job, isMarried;
+// job = 'teacher';
+// isMarried = false;
 
-console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+// console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+
+var heightInMeterMark = 1.8;
+var heightInMeterJohn = 2;
+
+var massInKilogramsMark = 81;
+var massInKilogramsJohn = 74;
+
+var bmiMark = massInKilogramsMark / (heightInMeterMark * heightInMeterMark);
+var bmiJohn = massInKilogramsJohn / (heightInMeterJohn * heightInMeterJohn);
+
+var markHasHighestBmi = false;
+
+if(bmiMark > bmiJohn){
+    markHasHighestBmi = true;
+} else {
+    markHasHighestBmi = false;
+}
+
+console.log('Is marks BMI higher then Johns? ' + markHasHighestBmi);
