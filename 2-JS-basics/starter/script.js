@@ -1,18 +1,24 @@
-var averageScoreTeamJohn = (89 + 1 + 1) / 3;
-var averageScoreTeamMike = (116, 94, 123) / 3;
-var averageScoreTeamMary = (97, 134, 200) / 3;
-
-switch(true) {
-    case averageScoreTeamMike > averageScoreTeamJohn && averageScoreTeamMike > averageScoreTeamMary:
-        console.log('Team Mike is the winner with an average score of: ' + averageScoreTeamMike);
-        break;
-    case averageScoreTeamJohn > averageScoreTeamMike && averageScoreTeamJohn > averageScoreTeamMary:
-        console.log('Team John is the winner with an average score of: ' + averageScoreTeamJohn);
-        break;
-    case averageScoreTeamMary > averageScoreTeamMike && averageScoreTeamMary > averageScoreTeamJohn:
-        console.log('Team Mary is the winner with an average score of: ' + averageScoreTeamMary);
-        break;
-    default:
-        console.log('there is a draw');
-        break;
+var john = {
+    fullName: 'John',
+    mass: 80,
+    height: 1.80,
+    bmi: function() {
+        return this.mass / (this.height * this.height);
+    }
 }
+
+var Mark = {
+    fullName: 'Mark',
+    mass: 70,
+    height: 1.62,
+    bmi: function() {
+        return this.mass / (this.height * this.height);
+    }
+}
+
+if (john.bmi > Mark.bmi) {
+    console.log(john.fullName + ' has the Highest BMI with a score of: ' + john.bmi);
+} else {
+    console.log(Mark.fullName + ' has the Highest BMI with a score of: ' + Mark.bmi);
+}
+
